@@ -2,4 +2,8 @@ import { createApp } from 'vue'
 import './assets/style.css'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import { RouterConfigs } from './routes/index'
+
+const app = createApp(App)
+app.use(RouterConfigs)
+app.mount('#app')
